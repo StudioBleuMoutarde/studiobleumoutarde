@@ -1,0 +1,160 @@
+:root {
+  --primary: #011D4C;
+  --primary-dark: #07214a;
+  --primary-light: #1f375c;
+  --primary-opacity: rgba(153, 164, 183, 0.3);
+  --font-title: #f2f4ff;
+  --font-text: #b4c2fc;
+}
+ 
+body {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0px;
+  background-color: var(--primary);
+}
+
+h1, h2, h3, p {
+  font-family: 'Montserrat', sans-serif;
+  color: var(--font-title);
+}
+
+h1 {
+  font-size: 36px;
+}
+
+p {
+  color: var(--font-text);
+}
+
+section {
+  margin-bottom: 144px;
+}
+
+.main {
+  max-width: 1080px;
+  padding: 4rem;
+}
+
+.hero {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 96px 0px;
+}
+
+#logo {
+  width: 300px;
+  height: 300px;
+  object-fit: contain;
+}
+
+.about {
+  width: 100%;
+}
+
+section > h2 {
+  margin-bottom: 48px;
+}
+
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 48px;
+}
+
+.skill-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 32px 16px;
+  border-radius: 16px;
+  border: 1px solid var(--primary-light);
+  background-color: var(--primary-dark);
+}
+
+.skill-column > h3 {
+  margin-top: 0px;
+  margin-bottom: 48px;
+  font-size: 20px;
+  color: var(--font-text);
+}
+
+.skill {
+  width: 100%;
+  margin: 12px 0px;
+}
+
+.skill > .bar {
+  height: 24px;
+  width: 100%;
+  border-radius: 12px;
+  border: 1px solid var(--primary-light);
+  background-color: var(--font-title);
+}
+
+.skill > .bar > div {
+  height: 24px;
+  border-radius: 10px;
+  border: 1px solid var(--primary-light);
+  background-color: var(--primary);
+}
+
+.project-card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.project-card > img {
+  width: 600px;
+  height: 350px;
+  object-fit: contain;
+}
+
+.project-card > div {
+  padding: 16px;
+}
+
+.project-card > div > .tags-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 32px;
+}
+
+.project-card > div > .tags-container > .tag {
+  font-size: 12px;
+  padding: 6px;
+  margin-right: 11px;
+  border-radius: 16px;
+  border: 1px solid var(--primary-light);
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact > h2 {
+  font-size: 36px;
+}
+
+.contact > p {
+  margin-bottom: 48px;
+  font-size: 24px;
+}
+
+.contact > a > img {
+  width: 50px;
+  height: auto;
+}

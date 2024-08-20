@@ -8,33 +8,134 @@
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 
-      <style>
-         body {
-            width: 100vw;
-            height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            margin: 0px;
-            background-color: #011D4C;
-         }
-
-         #logo {
-            width: 200px;
-            height: 200px;
-            object-fit: contain;
-         }
-
-         p {
-            font-family: 'Montserrat', sans-serif;
-            color: #fdfdfd;
-         }
-      </style>
+      <link rel="stylesheet" href="./style/main.css">
    </head>
    <body>
-      <img id="logo" src="./public/logo.jpg" alt="logo" />
+      <div class="main">
+         <header class="hero">
+            <img id="logo" src="./public/logo.jpg" alt="logo" />
+         </header>
 
-      <p>Petit développeur</p>
+         <section class="about">
+            <h2>A propos</h2>
+
+            <p>Je m'appelle Frédéric Llorca, développeur fullstack javascript. Avec 6 ans d'expérience en agence. J'ai eu l'opportunité de gérer et de contribuer à de nombreux projets, chacun avec ses propres défis. Je propose aujourd'hui mes services en tant qu'indépendant. Mon objectif est d'accompagner les entreprises en mettant à leur disposition mon savoir-faire, mon expérience, et une approche orientée produit.</p>
+         </section>
+
+         <section class="skills">
+            <h2>Compétences</h2>
+
+            <div class="skills-container">
+               <div class="skill-column">
+                  <h3>Frontend</h3>
+
+                  <div class="skill">
+                     <p>HTML/CSS</p>
+
+                     <div class="bar">
+                        <div style="width: 100%"></div>
+                      </div>
+                  </div>
+
+                  <div class="skill">
+                     <p>Javascript</p>
+
+                     <div class="bar">
+                        <div style="width: 100%"></div>
+                      </div>
+                  </div>
+
+                  <div class="skill">
+                     <p>React</p>
+
+                     <div class="bar">
+                        <div style="width: 90%"></div>
+                      </div>
+                  </div>
+
+                  <div class="skill">
+                     <p>React Native</p>
+
+                     <div class="bar">
+                        <div style="width: 100%"></div>
+                      </div>
+                  </div>
+
+                  <div class="skill">
+                     <p>Vue</p>
+
+                     <div class="bar">
+                        <div style="width: 80%"></div>
+                      </div>
+                  </div>
+               </div>
+
+               <div class="skill-column">
+                  <h3>Backend</h3>
+
+                  <div class="skill">
+                     <p>NodeJS</p>
+
+                     <div class="bar">
+                        <div style="width: 95%"></div>
+                      </div>
+                  </div>
+
+                  <div class="skill">
+                     <p>NestJS</p>
+
+                     <div class="bar">
+                        <div style="width: 95%"></div>
+                      </div>
+                  </div>
+
+                  <div class="skill">
+                     <p>SQL - PostgreSQL</p>
+
+                     <div class="bar">
+                        <div style="width: 90%"></div>
+                      </div>
+                  </div>
+
+                  <div class="skill">
+                     <p>AdonisJS</p>
+
+                     <div class="bar">
+                        <div style="width: 80%"></div>
+                      </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+
+         <section class="projects">
+            <h2>Projets</h2>
+
+            <div class="project-card">
+               <img src="./public/doublez.JPG" alt="illustration doublez" />
+
+               <div>
+                  <h2>Double Z</h2>
+
+                  <p>DoubleZ est une plateforme permettant aux joueurs de créer des quiz pour jouer avec leurs amis. Un des joueurs, hôte de la partie pose les questions aux autres participants. DoubleZ propose plusieurs types de questions différentes et une gestion personnalisée de la partie.</p>
+
+                  <div class="tags-container">
+                     <p class="tag">Conception</p>
+                     <p class="tag">React</p>
+                     <p class="tag">NestJS</p>
+                     <p class="tag">Websocket</p>
+                  </div>
+               </div>
+            </div>
+         </section>
+
+         <section class="contact">
+            <h2>Me contacter</h2>
+
+            <p>frederic@studiobleumoutarde.com</p>
+
+            <a href="https://www.linkedin.com/in/fr%C3%A9d%C3%A9ric-llorca-5640b210a/" target="_blank"><img src="./public/linkedin.png" alt="Linkedin logo" /></a>
+         </section>
+      </div>
    </body>
 </html>
