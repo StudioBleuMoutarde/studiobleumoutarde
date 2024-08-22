@@ -92,18 +92,19 @@ section > h2 {
 }
 
 .skill > .bar {
-  height: 24px;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
   border-radius: 12px;
-  border: 1px solid var(--primary-light);
-  background-color: var(--font-title);
+  background-color: #021024;
 }
 
 .skill > .bar > div {
-  height: 24px;
-  border-radius: 10px;
-  border: 1px solid var(--primary-light);
-  background-color: var(--primary);
+  height: 18px;
+  border-radius: 12px;
+  background-color: #C6CAD6;
 }
 
 .project-card {
@@ -120,6 +121,11 @@ section > h2 {
 
 .project-card > div {
   padding: 16px;
+}
+
+.project-card > div > h2 > a {
+  font-size: 16px;
+  text-decoration: none;
 }
 
 .project-card > div > .tags-container {
