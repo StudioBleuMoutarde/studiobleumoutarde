@@ -8,7 +8,7 @@
 }
  
 body {
-  width: 100vw;
+  min-width: 98vw;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
